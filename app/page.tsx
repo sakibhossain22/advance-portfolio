@@ -10,6 +10,10 @@ import {
 } from 'lucide-react';
 import HeroSection from '@/components/HeroSection';
 import DockNav from '@/components/DocNav';
+import Stats from '@/components/Stats';
+import TechStack from '@/components/TechStack';
+import Features from '@/components/Features';
+import Hero from '@/components/Hero';
 
 // --- Global Animation Variants (for Hero Content) ---
 const fader: Variants = {
@@ -38,7 +42,10 @@ export default function ShakibPortfolio() {
       <main className="max-w-6xl mx-auto px-6 py-32 space-y-48">
         {/* --- Hero Section (Component 1) --- */}
         <HeroSection />
-
+        <Hero/>
+        <Stats />
+        <TechStack />
+        <Features />
         {/* --- Optional: Add more content here, like Projects or Skills --- */}
         <div className="h-screen" /> {/* Placeholder just for scrolling */}
       </main>
